@@ -1,0 +1,45 @@
+.Info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10%;
+  height: 350px;
+}
+
+.InfoText {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.InfoText h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.InfoText p {
+  color: hsl(257, 7%, 63%);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3%;
+}
+
+.InfoText button {
+  margin-bottom: 5%;
+}
+.Img {
+  width: 450px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Img > img {
+  height: 100%;
+}
+
+
+
