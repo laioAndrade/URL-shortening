@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.css';
+import Nav from './Components/Nav/Nav';
+import Info from './Section/Info/Info';
+import Input from './Components/Input/Input';
 
 function App() {
   return (
     <div className="App">
-      <h1>Teste</h1>
+      <Nav />
+      <Info />
+      <Input />
     </div>
   );
 }
