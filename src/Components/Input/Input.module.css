@@ -1,0 +1,27 @@
+.Shorten {
+  background-image: url("../../assets/images/bg-shorten-desktop.svg");
+  background-position: initial;
+  background-color: hsl(257, 27%, 26%);
+  margin: 5% 10%;
+  width: 70%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.Input {
+  width: 70%;
+  height: 33px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 1.5%;
+  padding-left: 20px;
+}
+
+.Button {
+  width: 15%;
+  height: 33px;
+}
+
