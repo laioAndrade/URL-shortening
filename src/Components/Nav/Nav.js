@@ -5,7 +5,7 @@ import classes from './Nav.module.css';
 const nav = () => (
   <div className={classes.Nav}>
     <div className={classes.NavRight}> 
-      <img src={logo} alt="logo"/>
+      <img  src={logo} alt="logo"/>
       <span>Features</span>
       <span>Pricing</span> 
       <span>Resources</span> 
