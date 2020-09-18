@@ -10,26 +10,28 @@ const statistics = () => (
     <h2>Advanced Statistics</h2>
     <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
     <div className={classes.BoxGrid}>
-      <div className={classes.Box} >
+      <div className={classes.Box} style={{alignSelf: 'start'}}>
         <img src={brandIcon} alt="brand icon"/>
         <h4>Brand Recognition</h4> 
           <span>Boost your brand recognition with each click.
           Generic links don’t mean a thing. Branded links help instil confidence 
           in your content.</span>
       </div>
-      <div className={classes.Box} >
+
+      <div className={classes.Box} style={{alignSelf: 'center'}}>
         <img src={detailedIcon} alt="brand icon"/>
         <h4>Detailed Records</h4> 
         <span>Gain insights into who is clicking your links. 
         Knowing when and where people engage with your content helps inform better decisions.</span>
          
       </div>
-      <div className={classes.Box} >
+      <div className={classes.Box} style={{alignSelf: 'end'}}>
         <img src={customizableIcon} alt="brand icon"/>
         <h4>Fully Customizable</h4> 
         <span>Improve brand awareness and content discoverability 
         through customizable links, supercharging audience engagement.</span>
       </div>
+      <div className={classes.Line} />
     </div>
   
   </div>

@@ -1,7 +1,7 @@
 .Statistics {
   padding-top: 30px;
-  background: hsl(0, 0%, 75%);
-  height: 500px;
+  background: hsl(0, 0%, 90%);
+  height: 700px;
 }
 
 .Statistics > p {
@@ -13,7 +13,7 @@
 }
 
 .BoxGrid {
-  height: 200px;
+  height: 400px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 5% 10%;
@@ -34,3 +34,4 @@
   border-radius: 25px;
   padding: 10px;
 }
+
