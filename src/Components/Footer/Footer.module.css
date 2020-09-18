@@ -7,6 +7,8 @@
   color: hsl(257, 7%, 63%);
 }
 
+
+
 .List {
   display: flex;
   flex-direction: column;
@@ -17,6 +19,12 @@
   font-weight: 700;
   color: white;
   margin-bottom: 10px;
+}
+
+.List span:hover,
+.List span:active {
+  cursor: pointer;
+  color: hsl(180, 66%, 49%);
 }
 
 .Icon {
