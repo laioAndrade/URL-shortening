@@ -1,0 +1,36 @@
+.Statistics {
+  padding-top: 30px;
+  background: hsl(0, 0%, 75%);
+  height: 500px;
+}
+
+.Statistics > p {
+  color: hsl(257, 7%, 63%);
+}
+
+.Statistics span {
+  color: hsl(257, 7%, 63%);
+}
+
+.BoxGrid {
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5% 10%;
+  gap: 5%;  
+}
+
+.Box {
+  background: white;
+  height: 250px;
+  padding: 0 20px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.Box img {
+  margin-top: -15px;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 25px;
+  padding: 10px;
+}
