@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/images/logo.svg';
 import classes from './Nav.module.css';
+import Button from '../Button/Button';
 
 const nav = () => (
   <div className={classes.Nav}>
@@ -12,7 +13,7 @@ const nav = () => (
     </div>
     <div className={classes.NavLeft}>
       <span>Login</span> 
-      <button type="submit" className={classes.Button}>Sign Up</button> 
+      <Button text="Sign Up" /> 
     </div>
   </div>
 );

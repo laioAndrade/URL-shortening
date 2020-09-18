@@ -7,6 +7,12 @@
   color:hsl(257, 7%, 63%);
 }
 
+.Nav span:hover,
+.Nav span:active{
+  color: hsl(260, 8%, 14%);
+  cursor: pointer;
+
+}
 .NavRight {
   width: 50%;
   display: flex;
@@ -29,13 +35,4 @@
 
 .NavLeft :first-child {
   margin-right: 20px;
-}
-
-.Button {
-  background: hsl(180, 66%, 49%);
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-weight: bold;
-  padding: 5px 10px;
-} 
+}  

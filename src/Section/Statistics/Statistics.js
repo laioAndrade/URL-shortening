@@ -5,9 +5,6 @@ import brandIcon from '../../assets/images/icon-brand-recognition.svg';
 import detailedIcon from '../../assets/images/icon-detailed-records.svg';
 import customizableIcon from '../../assets/images/icon-fully-customizable.svg';
 
-
-
-
 const statistics = () => (
   <div className={classes.Statistics}>
     <h2>Advanced Statistics</h2>

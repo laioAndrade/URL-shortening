@@ -7,6 +7,7 @@
 import React, { Component } from 'react';
 import classes from './Input.module.css';
 import axios from '../../axios';
+import Button from '../Button/Button';
 
 class Input extends Component {
   state = {
@@ -62,7 +63,7 @@ class Input extends Component {
             type="text" 
             placeholder="Shorten a link here..."
             onChange={this.changeHandler}/>
-          <button className={classes.Button} type="submit">Shorten it</button>
+          <Button type="submit" text="Shorten it" />
         </form>
         {urlList}
       </>

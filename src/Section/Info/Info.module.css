@@ -18,7 +18,7 @@
 
 .InfoText h1 {
   margin: 0;
-  font-size: 50px;
+  font-size: 56px;
 }
 
 .InfoText p {
@@ -29,6 +29,9 @@
 }
 
 .InfoText button {
+  width: 150px;
+  height: 40px;
+  font-size: 1.2rem;
   margin-bottom: 5%;
 }
 .Img {
