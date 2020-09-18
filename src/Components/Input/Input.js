@@ -20,7 +20,11 @@ class Input extends Component {
       axios.post('/', {
         "url": this.state.newUrl
       }).then(response => {
-          const updateURLs = [...this.state.urls, response.data.hashid];
+          const urlS = {
+            url: this.state.newUrl,
+            shortUrl: "https://rel.ink/" + response.data.hashid
+          }
+          const updateURLs = [...this.state.urls, urlS];
           this.setState({
             urls: updateURLs
           });
@@ -38,8 +42,18 @@ class Input extends Component {
   render() {
     let urlList = null;
     if(this.state.urls) {
-      urlList = this.state.urls.map(url => {
-      return <p key={url}>{'https://rel.ink/'+url}</p>;
+      urlList = this.state.urls.map(id => {
+      return (
+        <div key={id} className={classes.History}>
+          <span >{id.url}</span>
+          <div>
+            <span>{id.shortUrl}</span>
+            <button type="button">Copy</button>
+          </div>
+          
+        </div>
+        
+        );
       })
       
     }

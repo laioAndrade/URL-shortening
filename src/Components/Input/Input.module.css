@@ -20,6 +20,21 @@
   padding-left: 20px;
 }
 
+.History {
+  width: 70%;
+  height: 60px;
+  margin:5% 10%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.History > span {
+  padding: 0 10px;
+}
+
+
 .Button {
   width: 15%;
   height: 33px;
