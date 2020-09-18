@@ -5,6 +5,7 @@
 /* eslint-disable react/state-in-constructor */
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
+import ls from 'local-storage';
 import classes from './Input.module.css';
 import axios from '../../axios';
 import Button from '../Button/Button';
@@ -14,6 +15,13 @@ class Input extends Component {
     urls: [],
     newUrl: null
   }
+
+  componentDidMount() {
+    const urlSaved = ls.get('urls') || [];
+    this.setState({urls: urlSaved});
+    console.log(urlSaved);
+  }
+
 
   submitHandler = (event) => {
     event.preventDefault();
@@ -25,10 +33,13 @@ class Input extends Component {
             url: this.state.newUrl,
             shortUrl: "https://rel.ink/" + response.data.hashid
           }
+
           const updateURLs = [...this.state.urls, urlS];
           this.setState({
-            urls: updateURLs
+            urls: updateURLs,
+
           });
+          ls.set('urls', updateURLs);
         });
     }
   }
@@ -49,7 +60,8 @@ class Input extends Component {
           <span >{id.url}</span>
           <div>
             <span>{id.shortUrl}</span>
-            <button type="button">Copy</button>
+            <button className={classes.Button} type="button" onClick={() => {
+              navigator.clipboard.writeText(id.shortUrl)}}>Copy</button>
           </div>
         </div>
         );
