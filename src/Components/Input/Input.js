@@ -50,12 +50,9 @@ class Input extends Component {
             <span>{id.shortUrl}</span>
             <button type="button">Copy</button>
           </div>
-          
         </div>
-        
         );
       })
-      
     }
     return (
       <>
