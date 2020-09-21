@@ -19,7 +19,6 @@ class Input extends Component {
   componentDidMount() {
     const urlSaved = ls.get('urls') || [];
     this.setState({urls: urlSaved});
-    console.log(urlSaved);
   }
 
 
@@ -56,10 +55,10 @@ class Input extends Component {
     if(this.state.urls) {
       urlList = this.state.urls.map(id => {
       return (
-        <div key={id} className={classes.History}>
+        <div key={id.shortUrl} className={classes.History}>
           <span >{id.url}</span>
           <div>
-            <span>{id.shortUrl}</span>
+            <span style={{color: 'hsl(180, 66%, 49%)'}}>{id.shortUrl}</span>
             <button className={classes.Button} type="button" onClick={() => {
               navigator.clipboard.writeText(id.shortUrl)}}>Copy</button>
           </div>

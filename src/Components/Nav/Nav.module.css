@@ -3,7 +3,7 @@
   width: auto;
   justify-content: space-between;
   align-items: center;
-  margin: 5% 0 5% 10%;
+  margin: 5% 10% 5% 10%;
   color:hsl(257, 7%, 63%);
 }
 
@@ -28,9 +28,9 @@
 }
 
 .NavLeft {
-  width: 30%;
+  width: 50%;
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .NavLeft :first-child {
